@@ -32,6 +32,7 @@ And place it in the options.plugin.sort
                     plugins: {
                         sort:
                             {
+                                enable: true,
                                 sortFunction: (a,b) => {/** implement your own sort function here **/}
                             }
                     }
@@ -45,6 +46,9 @@ Alternatively you can provide an array that is already sorted in the order you w
                 type: 'bar',
                 options: {
                     plugins: {
-                      mode: 'array',
-                      reference: ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D", "F"]
+                     sort: {
+                        enable: true,
+                        mode: 'array',
+                        reference: ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D", "F"]
+                      }
                     }
