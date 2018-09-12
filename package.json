@@ -1,0 +1,45 @@
+{
+  "name": "chartjs-plugin-sort",
+  "version": "0.1.0",
+  "description": "enables user to provide a sort array or sort callback function for chartjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scotthsieh0503/chartjs-plugin-sort.git"
+  },
+  "keywords": [
+    "chartjs",
+    "sort",
+    "chartj-plugin",
+    "plugin"
+  ],
+  "author": "Scott Hsieh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scotthsieh0503/chartjs-plugin-sort/issues"
+  },
+  "homepage": "https://github.com/scotthsieh0503/chartjs-plugin-sort#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "chart.js": "^2.7.2",
+    "eslint": "^5.5.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.17.1",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "dependencies": {
+    "eslint-watch": "^4.0.2"
+  }
+}
