@@ -17,23 +17,30 @@
       labels: ["Course A", "Course B", "Course C"],
       datasets: [
       {
-          label: 'B',
+          label: 'b',
           backgroundColor: "#ffe100",
           data: [
             20, 34, 24
           ]
       },
       {
-        label: 'C',
+        label: 'c',
         backgroundColor: "#aad700",
         data: [
           50, 44, 52
         ]
       },{
-        label: 'A',
+        label: 'a',
         backgroundColor: "#ef0000",
         data: [
           30, 22, 24
+        ]
+      },
+      {
+        label: 'f',
+        backgroundColor: "orange",
+        data: [
+          11, 30, 24
         ]
       }]
     };
@@ -47,8 +54,9 @@
         	plugins: {
           	sort: {
               enable: true,
-              order: 'desc',
-              reference: ["A", "B", "C"],
+              mode: 'array',
+              order: 'asc',
+              reference: ["A", "B", "C","D", "F"],
               sortBy: 'label'
 						}
             },
@@ -72,7 +80,6 @@
               ticks: {
                 beginAtZero: true,
                 min: 0,
-                max: 100
               }
             }]
           }

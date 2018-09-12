@@ -21,12 +21,12 @@ const plugin = {
     }
   },
   sortByArray: function (chart, options) {
-    let reference = options.reference
+    let reference = options.reference.map(value => value.toLowerCase())
     let datasets = chart.config.data.datasets
 
     datasets.sort(function (a, b) {
       let sortOrder = (options.order === 'desc') ? -1 : 1
-      return sortOrder * (reference.indexOf(a[options.sortBy]) - reference.indexOf(b[options.sortBy]))
+      return sortOrder * (reference.indexOf(a[options.sortBy].toLowerCase()) - reference.indexOf(b[options.sortBy].toLowerCase()))
     })
 
     return datasets
