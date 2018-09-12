@@ -7,15 +7,15 @@ const plugin = {
     this.options = chart.options.plugins.sort
   },
   afterInit: function (chart) {
-    if (this.options.enable === true) {
+    if (this.options.enable) {
       switch (this.options.mode) {
         case 'array':
           let sortedDataSet = []
           sortedDataSet = this.sortByArray(chart, this.options)
-          chart.config.data.dataset = sortedDataSet
+          chart.config.data.datasets = sortedDataSet
           break
         case 'function':
-          chart.config.dataset.sort(this.options.sortFunction)
+          chart.config.data.datasets.sort(this.options.sortFunction)
           break
       }
     }

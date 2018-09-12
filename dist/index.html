@@ -17,18 +17,19 @@
       labels: ["Course A", "Course B", "Course C"],
       datasets: [
       {
+          label: 'B',
+          backgroundColor: "#ffe100",
+          data: [
+            20, 34, 24
+          ]
+      },
+      {
         label: 'C',
         backgroundColor: "#aad700",
         data: [
           50, 44, 52
         ]
-      }, {
-        label: 'B',
-        backgroundColor: "#ffe100",
-        data: [
-          20, 34, 24
-        ]
-      }, {
+      },{
         label: 'A',
         backgroundColor: "#ef0000",
         data: [
@@ -46,7 +47,6 @@
         	plugins: {
           	sort: {
               enable: true,
-              mode: 'array',
               order: 'desc',
               reference: ["A", "B", "C"],
               sortBy: 'label'
