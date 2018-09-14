@@ -26,7 +26,7 @@ const plugin = {
 
     datasets.sort(function (a, b) {
       let sortOrder = (options.order === 'desc') ? -1 : 1
-      return sortOrder * (reference.indexOf(a[options.sortBy].toLowerCase()) - reference.indexOf(b[options.sortBy].toLowerCase()))
+      return sortOrder * (reference.indexOf(a[options.sortBy].trim().toLowerCase()) - reference.indexOf(b[options.sortBy].trim().toLowerCase()))
     })
 
     return datasets

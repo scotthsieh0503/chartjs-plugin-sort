@@ -1,6 +1,6 @@
 {
   "name": "chartjs-plugin-sort",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "enables user to provide a sort array or sort callback function for chartjs",
   "main": "index.js",
   "scripts": {
